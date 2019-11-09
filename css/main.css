@@ -39,7 +39,7 @@ img {
 }
 
 .imgcontainer {
-    width: 50%;
+    width: 25%;
     position: relative;
     margin: 5vh auto;
 }
@@ -80,7 +80,8 @@ img {
 }
 
 .infopanel {
-    margin: 10vh 25%;
+    margin: 10vh 0;
+    width: 100%;
 }
 
 .top {
@@ -99,6 +100,18 @@ img {
     font-weight: 700;
     margin: 15vh 0 0 0;
     color: #2e8185;
+}
+
+@media only screen and (max-width: 1250px) {
+    .imgcontainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .imgcontainer {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
