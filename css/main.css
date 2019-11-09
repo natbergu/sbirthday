@@ -1,0 +1,160 @@
+body {
+    background-color: #e3fdfd;
+    margin: 0;
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+
+h1, h2 {
+    font-family: "Open Sans", Verdana, sans-serif;
+    font-weight: 300;
+    margin: 1vh 5vw;
+}
+
+hr {
+    border: 5px dotted;
+    border-style: none none dotted none;
+    margin: 5vh 35vw 0;
+    position: relative;
+    top: 2.5px;
+}
+
+main {
+    margin: 10vh 0 0 0;
+    width: 100%;
+    height: 100vh;
+    color: #349398;
+    background-color: #e3fdfd;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #cbf1f5;
+    padding: 5vh 10vw;
+}
+
+.imgcontainer {
+    width: 50%;
+    position: relative;
+    margin: 5vh auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #cbf1f5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.imgcontainer:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.portrait {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.infopanel {
+    margin: 10vh 25%;
+}
+
+.top {
+    background-color: #cbf1f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 91vh;
+}
+
+.bigname {
+    font-family: "Playfair Display", serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin: 15vh 0 0 0;
+    color: #2e8185;
+}
+
+@media only screen and (max-width: 400px) {
+    .bigname {
+        font-size: 2rem;
+    }
+
+    .bigsub {
+        font-size: 1.25rem;
+    }
+}
+
+.navbar {
+    align-items: center;
+    background-color: #e3fdfd;
+    display: flex;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.navhome, .navitem {
+    color: #349398;
+    background-color: #a6e3e9;
+    border-radius: 7.5px;
+    padding: 1vh;
+}
+
+.navhome:hover, .navitem:hover {
+    color: #71c9ce;
+    background-color: #c2ecf0;
+    text-decoration: none;
+}
+
+.navhome {
+    flex: 3;
+    margin: 1vh 2.5vw 1vh 5vw;
+}
+
+.navitem {
+    flex: 1;
+    margin: 1vh 2.5vw 1vh 2.5vw;
+}
+
+.rightside {
+    margin-right: 5vw;
+}
+
+a {
+    font-family: "Open Sans", Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
