@@ -108,9 +108,18 @@ img {
     }
 }
 
+@media only screen and (max-width: 1000px){
+    .histeven {
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px) {
     .imgcontainer {
         width: 80%;
+    }
+
+    .navbar {
+        font-size: 0.75rem;
     }
 }
 
@@ -121,6 +130,28 @@ img {
 
     .bigsub {
         font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .text {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .article {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 0.7rem;
     }
 }
 
