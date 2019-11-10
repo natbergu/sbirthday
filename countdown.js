@@ -7,7 +7,7 @@ var checkYear = new Date().getFullYear();
 document.getElementById("age").innerHTML = (checkYear - 1961);
 document.getElementById("age2").innerHTML = (checkYear - 1961);
 
-//If today isn't the day after November 9th and it isn't November 9th, change the [day] in "[day] (to be) your birthday" to November 9th
+//If today isn't November 9th or November 10th, change the [day] in "[day] (to be) your birthday" to November 9th
 if ((checkDay !== 9 && checkDay !== 10) || checkMonth !== 10) {
     document.getElementById("day").innerHTML = "November 9th";
 }
@@ -44,7 +44,7 @@ var x = setInterval(function() {
         document.getElementById("untilafter").innerHTML = "Time since you turned";
 
         //If it is currently counting up, check for day of and change tense
-        if ((checkDay !== 9 && checkDay !== 10) || checkMonth !== 10) {
+        if ((checkDay !== 9) || checkMonth !== 10) {
             //If it isn't the day of, change the tense of (to be) in "[day] (to be) your birthday" to past
             document.getElementById("pasttense").innerHTML = "was";
         } else {
